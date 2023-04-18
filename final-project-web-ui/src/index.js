@@ -5,25 +5,27 @@ import { App } from "./App";
 import "bootstrap/scss/bootstrap.scss";
 import reportWebVitals from "./reportWebVitals";
 
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import Paper from "@mui/material/Paper";
+import Grid from "@mui/material/Grid";
+import SvgIcon, { SvgIconProps } from "@mui/material/SvgIcon";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-      <Container maxWidth="sm">
+    <Container maxWidth="sm">
       <Box sx={{ my: 4 }}>
         <Typography variant="h4" component="h1" gutterBottom>
-          CS 375 - Spring 2023 - Sample UI Application - [Update with your Name Here]
+          CS 375 - Spring 2023 - Sample UI Application - Thomas Kwashnak
         </Typography>
         <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary">
-        This is a sample UI application that will be deployed to AWS Cloud Platform. This application simulates a wizard form that has multiple steps available in it.
-        As you step through the application, you will see the JSON displayed below.
-      </Typography>
+          This is a sample UI application that will be deployed to AWS Cloud
+          Platform. This application simulates a wizard form that has multiple
+          steps available in it. As you step through the application, you will
+          see the JSON displayed below.
+        </Typography>
       </Box>
     </Container>
 
