@@ -6,7 +6,7 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 unzip awscliv2.zip
 sudo ./aws/install
 rm awscliv2.zip
-sudo pip install boto3 git-remote-codecommit
+pip install boto3 git-remote-codecommit
 
 echo Please enter a valid IP address. Type carefully:
 read ip_address
