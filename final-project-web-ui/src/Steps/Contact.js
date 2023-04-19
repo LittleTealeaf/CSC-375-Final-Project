@@ -43,7 +43,6 @@ export const Contact = () => {
           />
         </Field>
 
-
         <Button>Next {">"}</Button>
       </fieldset>
     </Form>
