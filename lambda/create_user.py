@@ -1,5 +1,4 @@
 import boto3
-from boto3.dynamodb.conditions import Key, Attr
 
 def lambda_handler(event, context):
     client = boto3.resource('dynamodb')
@@ -12,7 +11,12 @@ def lambda_handler(event, context):
         
       # Use request ID from context handler to allow for multiple requests - gives uniqueness
       'request_id': context.aws_request_id,
-      
+      'first_name': event.get('first_name'),
+      'last_name': event.get('last_name'),
+      'email': event.get('email'),
+      'university': event.get('university'),
+      'degree': event.get('degree'),
+      'about_me': event.get('about_me')
         }
       )
       
